@@ -191,7 +191,6 @@ dependencies {
       exclude group:'com.facebook.fbjni'
     }
 
-    compile ("com.facebook.react:react-native:0.55.4") { force = true }
 
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'
