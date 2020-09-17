@@ -9,3 +9,5 @@ export const DersSecScreen=({navigation}) => <Screen navigation={navigation} nam
 export const OgretimProgScreen=({navigation}) => <Screen navigation={navigation} name="OgretimProgrami" />
 export const TranscriptScreen=({navigation}) => <Screen navigation={navigation} name="TranscriptAl" />
 export const OgrecilerScreen=({navigation}) => <Screen navigation={navigation} name="Ogrenciler" />
+
+

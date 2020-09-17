@@ -1,30 +1,18 @@
 import * as React from 'react';
-import {View, Text, Button } from 'react-native';
+
 import { createAppContainer } from 'react-navigation';
-import {NavigationContainer, DrawerActions } from '@react-navigation/native';
+import { createStackNavigator } from 'react-navigation-stack';
 import {
   createDrawerNavigator
 } from '@react-navigation/drawer';
-//import {Feather} from '@expo/vector-icons'
+import { NavigationContainer } from '@react-navigation/native';
 import {Dimensions} from "react-native";
 
-import {
-    DanismanScreen,
-    DersSecScreen,
-    DersAraScreen,
-    DersProgScreen,
-    OgretimProgScreen,
-    ProfileScreen,
-    TranscriptScreen,
-    OgrecilerScreen
-} from "./Screens";
-
-import {DanısmanBilgileri} from "./Screens/DanısmanBilgileri";
-
+import DanismanBilgileri from "./Screens/DanismanBilgileri";
 import SideBar from "./components/SideBar";
 import DersSec from "./Screens/DersSec";
 import DersAra from "./Screens/DersAra";
-import DersProgramıGoruntule from "./Screens/DersProgramıGoruntule";
+import DersProgramiGoruntule from "./Screens/DersProgramiGoruntule";
 import OgretimProgrami from "./Screens/OgretimProgrami";
 import ProfiliYonet from "./Screens/ProfiliYonet";
 import TranskriptAl from "./Screens/TranskriptAl";
@@ -32,7 +20,7 @@ import Ogrenciler from "./Screens/Ogrenciler";
 
 const DrawerNavigator = createDrawerNavigator({
     DanismanScreen: {
-        screen: DanısmanBilgileri,
+        screen: DanismanBilgileri,
         navigationOptions:{
             title: "Danışman Bilgileri",
             style:{textAlign:"center", size:16}
@@ -53,7 +41,7 @@ const DrawerNavigator = createDrawerNavigator({
         }
     },
     DersProgScreen: {
-        screen: DersProgramıGoruntule,
+        screen: DersProgramiGoruntule,
         navigationOptions:{
             title: "Ders Programı",
             style:{textAlign:"center", size:16}
@@ -106,6 +94,7 @@ const DrawerNavigator = createDrawerNavigator({
     }
 }
 );
+
 
 export default createAppContainer(DrawerNavigator);
 
@@ -166,12 +155,5 @@ function MyDrawer() {
 
 
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center"
-	}
-});
+
 

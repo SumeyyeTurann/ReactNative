@@ -11,7 +11,7 @@ import {
 import {DrawerNavigatorItems} from "@react-navigation/drawer"
 //import {Ionicons} from "@expo/vector-icons"
 
-export default Sidebar = props => (
+export default SideBar = props => (
     <ScrollView>
         <ImageBackground
             style={{width: undefined, padding: 16, paddingTop: 48, backgroundColor: "grey"}}>
